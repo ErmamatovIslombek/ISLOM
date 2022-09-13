@@ -575,7 +575,27 @@ body {
 .knowleg__chart-line7 {
   width: 410px;
 }
+.knowleg__img {
+  -webkit-animation-name: image;
+          animation-name: image;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
 
+@keyframes image {
+  0% {
+    transform: translateY(9px);
+  }
+  100% {
+    transform: translateY(-9px);
+  }
+}
 @media only screen and (max-width: 1105px) {
   .knowleg__img {
     width: 616px;
@@ -1015,7 +1035,27 @@ body {
   width: 70px;
   height: 70px;
 }
+.work__img {
+  -webkit-animation-name: image;
+          animation-name: image;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
 
+@keyframes image {
+  0% {
+    transform: translateY(9px);
+  }
+  100% {
+    transform: translateY(-9px);
+  }
+}
 @media only screen and (max-width: 900px) {
   .work__img {
     width: 446px;

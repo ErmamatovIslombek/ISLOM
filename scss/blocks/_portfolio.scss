@@ -1,0 +1,282 @@
+.portfolio {
+    max-width: 100vw;
+
+    &__title {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 48px;
+        color: $light-grey;
+    }
+
+    &__green-word {
+        color: $green;
+    }
+
+    &__flex-list {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 150px;
+        margin-bottom: 60px;
+    }
+
+    &__db-box {
+        width: 50%;
+        justify-content: space-around;
+        display: flex;
+    }
+
+    &__iteam {
+        width: 270px;
+        background-color: $light-green;
+        border-radius: 5px;
+        border-left: 2px solid $light-green;
+        border-right: 2px solid $light-green;
+    }
+
+    &__image,
+    &__image2,
+    &__image3,
+    &__image4 {
+        width: 100%;
+        height: 200px;
+        background-image: url('./../../images/demo-4.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        border-bottom: 2px solid $green;
+    }
+
+    &__image2 {
+        background-image: url('./../../images/demo-1.png');
+    }
+
+    &__image3 {
+        background-image: url('./../../images/demo-2.png');
+    }
+
+    &__image4 {
+        background-image: url('./../../images/demo-3.png');
+    }
+
+
+
+    &__demo-btn {
+        @include btn;
+        display: inline-block;
+        background-color: $dark-yellow;
+        color: $white;
+        margin: 20px 0 20px 20px;
+        transition: background-color .2s ease;
+        font-weight: 600;
+
+        &:hover {
+            background-color: $white;
+            color: $light-grey; 
+            border: 3px solid $white
+        }
+
+    }
+
+    &__btn {
+        @include btn;
+        display: inline-block;
+        font-family: 'Inter';
+        color: $green;
+        letter-spacing: 1.5px;
+        font-weight: 600;
+        transition: background-color .3s ease;
+        margin-bottom: 50px;
+
+        &:hover {
+            background-color: $green;
+            color: $white;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1180px) {
+    .portfolio {
+        &__iteam {
+            width: 240px;
+        }
+
+        &__image,
+        &__image2,
+        &__image3,
+        &__image4 {
+            height: 170px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1058px) {
+    .portfolio {
+
+        &__title {
+            font-size: 38px;
+        }
+
+        &__iteam {
+            width: 210px;
+        }
+
+        &__image,
+        &__image2,
+        &__image3,
+        &__image4 {
+            height: 130px;
+        }
+        
+        &__demo-btn {
+            padding: 12px 25px;
+            font-size: 10px;
+        }
+}
+}
+
+@media only screen and (max-width: 938px) {
+    .portfolio {
+
+        &__title {
+            font-size: 37px;
+        }
+
+        &__iteam {
+            width: 180px;
+        }
+
+        &__image,
+        &__image2,
+        &__image3,
+        &__image4 {
+            height: 100px;
+        }
+        
+        &__demo-btn {
+            padding: 10px 20px;
+            font-size: 10px;
+        }
+}
+}
+
+@media only screen and (max-width: 813px) {
+    .portfolio {
+
+        &__title {
+            font-size: 35px;
+        }
+
+        &__iteam {
+            width: 150px;
+        }
+
+        &__image,
+        &__image2,
+        &__image3,
+        &__image4 {
+            height: 70px;
+        }
+        
+        &__demo-btn {
+            padding: 7px 15px;
+            font-size: 10px;
+        }
+}
+}
+
+@media only screen and (max-width: 730px) {
+    .portfolio {
+        &__flex-list {
+            flex-direction: column;
+        }
+
+        &__db-box {
+            width: 100%;
+        }
+
+        &__image,
+        &__image2,
+        &__image3,
+        &__image4 {
+            height: 200px;
+        }
+
+        &__iteam {
+            width: 270px;
+            margin-bottom: 50px;
+        }
+}
+}
+
+@media only screen and (max-width: 662px) {
+    .portfolio {
+
+        &__title {
+            font-size: 36px;
+        }
+
+        &__image,
+        &__image2,
+        &__image3,
+        &__image4 {
+            height: 200px;
+        }
+
+        &__iteam {
+            width: 240px;
+            margin-bottom: 30px;
+        }
+}
+}
+
+@media only screen and (max-width: 575px) {
+    .portfolio {
+
+        &__image,
+        &__image2,
+        &__image3,
+        &__image4 {
+            height: 150px;
+        }
+
+        &__iteam {
+            width: 200px;
+            margin-bottom: 15px;
+        }
+}
+}
+
+@media only screen and (max-width: 478px) {
+    .portfolio {
+
+        &__title {
+            font-size: 34px;
+        }
+
+        &__db-box {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        &__image,
+        &__image2,
+        &__image3,
+        &__image4 {
+            height: 150px;
+        }
+
+        &__iteam {
+            width: 100%;
+            margin-bottom: 35px;
+        }
+}
+}
+
+
+
+
